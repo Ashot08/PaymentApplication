@@ -1,0 +1,23 @@
+Message-ID: <b441d168d2f42ea2af255c09cd572f5c@localhost>
+Date: Sun, 08 Jul 2018 05:39:58 +0000
+Subject: Message subject
+From: from@magistrdog.ru
+To: admin@example.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1531028398_dfd3f2b5b2223000e1fdd4d7f1d58a9e_=_"
+
+
+--_=_swift_1531028398_dfd3f2b5b2223000e1fdd4d7f1d58a9e_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Plain text content
+
+--_=_swift_1531028398_dfd3f2b5b2223000e1fdd4d7f1d58a9e_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<b>HTML content</b>
+
+--_=_swift_1531028398_dfd3f2b5b2223000e1fdd4d7f1d58a9e_=_--

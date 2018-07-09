@@ -1,0 +1,1583 @@
+2018-07-01 05:49:39 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\advanced\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 C:\advanced\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\advanced\vendor\yiisoft\yii2\db\Command.php(1143): yii\db\Command->prepare(true)
+#6 C:\advanced\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#8 C:\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#19 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\advanced\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\advanced\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 C:\advanced\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\advanced\vendor\yiisoft\yii2\db\Command.php(1143): yii\db\Command->prepare(true)
+#4 C:\advanced\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#6 C:\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#17 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\advanced\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-07-01 05:49:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530424177.1893
+    'REQUEST_TIME' => 1530424177
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2018-07-01 05:53:09 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[08006] [7] fe_sendauth: no password supplied in C:\advanced\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('pgsql:host=loca...', 'root', '', NULL)
+#1 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 C:\advanced\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#7 C:\advanced\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#8 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#9 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#10 C:\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#17 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#18 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\advanced\yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[08006] [7] fe_sendauth: no password supplied in C:\advanced\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 C:\advanced\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#5 C:\advanced\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#6 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#7 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#8 C:\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#15 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#16 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\advanced\yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2018-07-01 05:53:09 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530424388.9918
+    'REQUEST_TIME' => 1530424388
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2018-07-01 05:53:34 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[08006] [7] ВАЖНО:  пользователь "root" не прошёл проверку подлинности (по паролю) in C:\advanced\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('pgsql:host=loca...', 'root', 'karibisn08', NULL)
+#1 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 C:\advanced\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#7 C:\advanced\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#8 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#9 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#10 C:\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#17 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#18 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\advanced\yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[08006] [7] ВАЖНО:  пользователь "root" не прошёл проверку подлинности (по паролю) in C:\advanced\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 C:\advanced\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 C:\advanced\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#5 C:\advanced\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#6 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#7 C:\advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#8 C:\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#15 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#16 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\advanced\yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2018-07-01 05:53:34 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530424414.2564
+    'REQUEST_TIME' => 1530424414
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2018-07-01 05:55:11 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in C:\advanced\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(51): m140506_102106_rbac_init->getAuthManager()
+#1 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m140506_102106_rbac_init->up()
+#2 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\advanced\yii(23): yii\base\Application->run()
+#12 {main}
+2018-07-01 05:55:07 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530424507.7949
+    'REQUEST_TIME' => 1530424507
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2018-07-01 06:08:53 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in C:\advanced\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(51): m140506_102106_rbac_init->getAuthManager()
+#1 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m140506_102106_rbac_init->up()
+#2 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\advanced\yii(23): yii\base\Application->run()
+#12 {main}
+2018-07-01 06:08:45 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530425324.7736
+    'REQUEST_TIME' => 1530425324
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2018-07-01 07:02:24 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: The use statement with non-compound name 'Yii' has no effect in C:\advanced\console\migrations\m180701_065603_AddUserTable.php:2
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(802): yii\base\ErrorHandler->handleError(2, 'The use stateme...', 'C:\\advanced\\con...', 2, Array)
+#1 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(802): require_once()
+#2 C:\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m180701_065603_...')
+#3 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m180701_065603_...')
+#4 C:\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m180701_065603_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#9 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#10 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\advanced\yii(23): yii\base\Application->run()
+#14 {main}
+2018-07-01 07:02:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530428540.4151
+    'REQUEST_TIME' => 1530428540
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-07-01 07:04:12 [-][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Interface 'yii\web\IdentityInterface' not found in C:\advanced\vendor\yiisoft\yii2\web\IdentityInterface.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-07-01 07:04:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530428650.4553
+    'REQUEST_TIME' => 1530428650
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-07-01 07:31:18 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "migration/create". in C:\advanced\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migration/creat...', Array)
+#1 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migration/creat...', Array)
+#2 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\advanced\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migration/create". in C:\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migration/creat...', Array)
+#1 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\advanced\yii(23): yii\base\Application->run()
+#3 {main}
+2018-07-01 07:31:18 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530430278.294
+    'REQUEST_TIME' => 1530430278
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migration/create'
+        2 => 'AddUserTable'
+    ]
+    'argc' => 3
+]
+2018-07-01 07:48:51 [-][-][-][error][yii\console\Exception] yii\console\Exception: Missing required arguments: name in C:\advanced\vendor\yiisoft\yii2\console\Controller.php:186
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('create', Array)
+#3 C:\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('create', Array)
+#4 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/create', Array)
+#5 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/create', Array)
+#6 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\advanced\yii(23): yii\base\Application->run()
+#8 {main}
+2018-07-01 07:48:51 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530431331.0106
+    'REQUEST_TIME' => 1530431331
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migrate/create'
+    ]
+    'argc' => 2
+]
+2018-07-03 11:49:46 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "migrate\create". in C:\advanced\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate\\create', Array)
+#1 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate\\create', Array)
+#2 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\advanced\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migrate\create". in C:\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate\\create', Array)
+#1 C:\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\advanced\yii(23): yii\base\Application->run()
+#3 {main}
+2018-07-03 11:49:46 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\advanced\\'
+    'PHP_SELF' => 'C:\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530618586.8491
+    'REQUEST_TIME' => 1530618586
+    'argv' => [
+        0 => 'C:\\advanced\\yii'
+        1 => 'migrate\\create'
+        2 => 'a'
+    ]
+    'argc' => 3
+]
+2018-07-05 17:34:03 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot declare class m180701_073144_AddAdminTable, because the name is already in use in C:\frank\console\migrations\m180701_073144_AddTestUsersAdmins.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-07-05 17:33:54 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\frank\\'
+    'PHP_SELF' => 'C:\\frank\\yii'
+    'SCRIPT_NAME' => 'C:\\frank\\yii'
+    'SCRIPT_FILENAME' => 'C:\\frank\\yii'
+    'PATH_TRANSLATED' => 'C:\\frank\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530812034.0339
+    'REQUEST_TIME' => 1530812034
+    'argv' => [
+        0 => 'C:\\frank\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-07-05 17:37:27 [-][-][-][error][ReflectionException] ReflectionException: Class m180701_073144_AddTestUsersAdmins does not exist in C:\frank\vendor\yiisoft\yii2\di\Container.php:428
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\di\Container.php(428): ReflectionClass->__construct('m180701_073144_...')
+#1 C:\frank\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('m180701_073144_...')
+#2 C:\frank\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('m180701_073144_...', Array, Array)
+#3 C:\frank\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('m180701_073144_...', Array, Array)
+#4 C:\frank\vendor\yiisoft\yii2\console\controllers\MigrateController.php(201): yii\BaseYii::createObject(Array)
+#5 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m180701_073144_...')
+#6 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m180701_073144_...')
+#7 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#8 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#11 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#12 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#13 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#14 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\frank\yii(23): yii\base\Application->run()
+#16 {main}
+2018-07-05 17:37:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\frank\\'
+    'PHP_SELF' => 'C:\\frank\\yii'
+    'SCRIPT_NAME' => 'C:\\frank\\yii'
+    'SCRIPT_FILENAME' => 'C:\\frank\\yii'
+    'PATH_TRANSLATED' => 'C:\\frank\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530812243.0574
+    'REQUEST_TIME' => 1530812243
+    'argv' => [
+        0 => 'C:\\frank\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-07-08 06:20:54 [-][-][-][error][yii\console\Exception] yii\console\Exception: Missing required arguments: name in C:\frank\vendor\yiisoft\yii2\console\Controller.php:186
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('create', Array)
+#3 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('create', Array)
+#4 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/create', Array)
+#5 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/create', Array)
+#6 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\frank\yii(23): yii\base\Application->run()
+#8 {main}
+2018-07-08 06:20:54 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Ashot08\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\frank\\'
+    'PHP_SELF' => 'C:\\frank\\yii'
+    'SCRIPT_NAME' => 'C:\\frank\\yii'
+    'SCRIPT_FILENAME' => 'C:\\frank\\yii'
+    'PATH_TRANSLATED' => 'C:\\frank\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1531030854.1352
+    'REQUEST_TIME' => 1531030854
+    'argv' => [
+        0 => 'C:\\frank\\yii'
+        1 => 'migrate/create'
+    ]
+    'argc' => 2
+]
+2018-07-09 03:55:02 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[08006] [7] ВАЖНО:  база данных "paymentApplication" не существует in C:\frank\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('pgsql:host=loca...', 'postgres', 'karibisn08', NULL)
+#1 C:\frank\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 C:\frank\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 C:\frank\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 C:\frank\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 C:\frank\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#7 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#8 C:\frank\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#9 C:\frank\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#10 C:\frank\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#17 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#18 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\frank\yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[08006] [7] ВАЖНО:  база данных "paymentApplication" не существует in C:\frank\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 C:\frank\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 C:\frank\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 C:\frank\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#5 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#6 C:\frank\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#7 C:\frank\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#8 C:\frank\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#15 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#16 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\frank\yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2018-07-09 03:55:00 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'c:\\frank\\'
+    'PHP_SELF' => 'c:\\frank\\yii'
+    'SCRIPT_NAME' => 'c:\\frank\\yii'
+    'SCRIPT_FILENAME' => 'c:\\frank\\yii'
+    'PATH_TRANSLATED' => 'c:\\frank\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1531108500.3001
+    'REQUEST_TIME' => 1531108500
+    'argv' => [
+        0 => 'c:\\frank\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2018-07-09 03:56:33 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[08006] [7] ВАЖНО:  база данных "paymentApplication" не существует in C:\frank\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('pgsql:host=loca...', 'postgres', 'karibisn08', NULL)
+#1 C:\frank\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 C:\frank\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 C:\frank\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 C:\frank\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 C:\frank\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#7 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#8 C:\frank\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#9 C:\frank\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#10 C:\frank\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#17 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#18 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\frank\yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[08006] [7] ВАЖНО:  база данных "paymentApplication" не существует in C:\frank\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 C:\frank\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 C:\frank\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 C:\frank\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#5 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#6 C:\frank\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#7 C:\frank\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#8 C:\frank\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#15 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#16 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\frank\yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2018-07-09 03:56:33 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'c:\\frank\\'
+    'PHP_SELF' => 'c:\\frank\\yii'
+    'SCRIPT_NAME' => 'c:\\frank\\yii'
+    'SCRIPT_FILENAME' => 'c:\\frank\\yii'
+    'PATH_TRANSLATED' => 'c:\\frank\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1531108593.1277
+    'REQUEST_TIME' => 1531108593
+    'argv' => [
+        0 => 'c:\\frank\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2018-07-09 03:57:27 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[08006] [7] ВАЖНО:  база данных "paymentApplication" не существует in C:\frank\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('pgsql:host=loca...', 'postgres', 'karibisn08', NULL)
+#1 C:\frank\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 C:\frank\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 C:\frank\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 C:\frank\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 C:\frank\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#7 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#8 C:\frank\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#9 C:\frank\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#10 C:\frank\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#17 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#18 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\frank\yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[08006] [7] ВАЖНО:  база данных "paymentApplication" не существует in C:\frank\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 C:\frank\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 C:\frank\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 C:\frank\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#5 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#6 C:\frank\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#7 C:\frank\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#8 C:\frank\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#15 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#16 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\frank\yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2018-07-09 03:57:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'c:\\frank\\'
+    'PHP_SELF' => 'c:\\frank\\yii'
+    'SCRIPT_NAME' => 'c:\\frank\\yii'
+    'SCRIPT_FILENAME' => 'c:\\frank\\yii'
+    'PATH_TRANSLATED' => 'c:\\frank\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1531108647.6929
+    'REQUEST_TIME' => 1531108647
+    'argv' => [
+        0 => 'c:\\frank\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2018-07-09 03:59:24 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[08006] [7] ВАЖНО:  база данных "paymentApplication" не существует in C:\frank\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('pgsql:host=loca...', 'postgres', 'karibisn08', NULL)
+#1 C:\frank\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 C:\frank\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 C:\frank\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 C:\frank\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 C:\frank\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#7 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#8 C:\frank\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#9 C:\frank\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#10 C:\frank\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#17 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#18 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\frank\yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[08006] [7] ВАЖНО:  база данных "paymentApplication" не существует in C:\frank\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 C:\frank\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 C:\frank\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 C:\frank\vendor\yiisoft\yii2\db\Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 C:\frank\vendor\yiisoft\yii2\db\Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(464): yii\db\Connection->quoteValue('migration')
+#5 C:\frank\vendor\yiisoft\yii2\db\pgsql\Schema.php(192): yii\db\pgsql\Schema->findColumns(Object(yii\db\TableSchema))
+#6 C:\frank\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\pgsql\Schema->loadTableSchema('migration')
+#7 C:\frank\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#8 C:\frank\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\frank\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\frank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\frank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\frank\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#15 C:\frank\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#16 C:\frank\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\frank\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\frank\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\frank\yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2018-07-09 03:59:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Ashot08\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-MBTD9P3'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Ashot08'
+    'LOCALAPPDATA' => 'C:\\Users\\Ashot08\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-MBTD9P3'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Ashot08\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\php;C:\\Program Files\\PostgresPro\\10\\bin;C:\\composer;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Ashot08\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ashot08\\AppData\\Roaming\\npm;C:\\Users\\Ashot08\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PGDATA' => 'C:\\Program Files\\PostgresPro\\10\\data'
+    'PGDATABASE' => 'postgres'
+    'PGLOCALEDIR' => 'C:\\Program Files\\PostgresPro\\10\\share\\locale\\'
+    'PGPORT' => '5432'
+    'PGUSER' => 'postgres'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 16 Model 6 Stepping 2, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '16'
+    'PROCESSOR_REVISION' => '0602'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Ashot08\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-MBTD9P3'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-MBTD9P3'
+    'USERNAME' => 'Ashot08'
+    'USERPROFILE' => 'C:\\Users\\Ashot08'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'c:\\frank\\'
+    'PHP_SELF' => 'c:\\frank\\yii'
+    'SCRIPT_NAME' => 'c:\\frank\\yii'
+    'SCRIPT_FILENAME' => 'c:\\frank\\yii'
+    'PATH_TRANSLATED' => 'c:\\frank\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1531108763.897
+    'REQUEST_TIME' => 1531108763
+    'argv' => [
+        0 => 'c:\\frank\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]

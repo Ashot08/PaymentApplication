@@ -1,0 +1,23 @@
+Message-ID: <cfbe487764fcbc423be2e17064123d3d@localhost>
+Date: Sun, 08 Jul 2018 05:37:57 +0000
+Subject: Message subject
+From: from@domain.com
+To: admin@example.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1531028278_bd1ce1c9eea4cb6256d36d53cf5c81db_=_"
+
+
+--_=_swift_1531028278_bd1ce1c9eea4cb6256d36d53cf5c81db_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Plain text content
+
+--_=_swift_1531028278_bd1ce1c9eea4cb6256d36d53cf5c81db_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<b>HTML content</b>
+
+--_=_swift_1531028278_bd1ce1c9eea4cb6256d36d53cf5c81db_=_--
