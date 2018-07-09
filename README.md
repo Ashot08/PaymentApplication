@@ -1,4 +1,4 @@
-# projectX
+# PaymentApplication
 <p>Для запуска сайта необходимы следующие миграции (установить поочередно):
 <ul>
   <li>yii migrate --migrationPath=@yii/rbac/migrations/,</li>
