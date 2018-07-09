@@ -48,9 +48,6 @@ class SignupForm extends Model
         }
         
         $user = new User();
-        if($user->id === 1){
-            $user->id++;
-        }
         $user->username = $this->username;
         $user->email = $this->email;
         $user->setPassword($this->password);
